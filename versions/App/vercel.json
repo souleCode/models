@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api_crop_pred.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "api_crop_pred.py" }
+    ]
+  }
